@@ -1,0 +1,20 @@
+﻿@model PaneraAPPS.Models.Reserva
+@{
+    ViewBag.Title = "Post";
+}
+
+<h2>Post Reserva</h2>
+
+<div>
+    
+    <div class="jumbotron">
+        <h1>Reserva Realizada!</h1>
+        <h2 class="lead">El administrador se contactará con usted a la brevedad para confirmar su reserva.</h2>
+        <h6>Al ser contactado se le detallarán los pasos a seguir para que nuestro producto llegue a sus manos.</h6>
+        <h6>Puede realizar una reserva nuevamente en el botón "Reservar".</h6>
+        <p><a href="/Home/Reserva" class="btn btn-primary btn-lg">Reservar &raquo;</a></p>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Volver al inicio", "Index")
+</p>

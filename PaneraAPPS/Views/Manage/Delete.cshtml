@@ -1,0 +1,79 @@
+﻿@model PaneraAPPS.Models.Reserva
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar registro</h2>
+
+<h3>¿Está seguro de eliminar el registro?</h3>
+<div
+    <dl class="dl-horizontal">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contacto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Metodopago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Metodopago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pagado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pagado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entregado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entregado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver al listado", "Admin")
+        </div>
+    }
+</div>
